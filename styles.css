@@ -65,7 +65,7 @@ body {
 .hero {
     text-align: center;
     padding: 3rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #452aab 0%, #f00071 100%);
     color: white;
     margin-bottom: 3rem;
 }
@@ -206,14 +206,18 @@ body {
 }
 
 .modal-content, .player {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
     width: 90%;
     max-width: 800px;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    z-index: 1000;
+
 }
 
 .player {
