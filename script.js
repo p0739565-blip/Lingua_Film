@@ -1,18 +1,21 @@
 // Данные о модулях и уроках
 const modulesData = [
+    //The Parent Trap
     {
         id: 1,
         title: "Friends Forever",
         subtitle: "Дружба на века",
         lessonTitle: "Friends Forever: Дружба на века",
-        videoUrl: "videos/lesson1.mp4",
+        videoUrl: "videos/po.mp4",
         phrases: [
-            { original: "You know what I mean?", translation: "Ты понимаешь, о чём я?" },
-            { original: "I kinda like it.", translation: "Мне это вроде как нравится." },
-            { original: "That’s awesome!", translation: "Это потрясающе!" },
-            { original: "Could you repeat that, please?", translation: "Не могли бы вы повторить, пожалуйста?" }
+            { original: "I've never seen.", translation: "Я никогда не видел." },
+            { original: "To have only ...", translation: "Иметь только ..." },
+            { original: "That's my dad.", translation: "Это мой отец." },
+            { original: "That's my mum.", translation: "Это моя мама." },
+            { original: "We're like twins!", translation: "Мы как близнецы." }
         ]
     },
+    //Jumanji: Welcome to the Jungle
     {
         id: 2,
         title: "Wild Adventures",
@@ -28,30 +31,35 @@ const modulesData = [
 
         ]
     },
+    //Wonder
     {
         id: 3,
         title: "Deep Talk",
         subtitle: "Глубокие беседы",
         lessonTitle: "Deep Talk: Глубокие беседы",
-        videoUrl: "videos/lesson3.mp4",
+        videoUrl: "videos/wo.mp4",
         phrases: [
-            { original: "In my opinion...", translation: "По моему мнению..." },
-            { original: "I completely agree.", translation: "Я полностью согласен." },
-            { original: "That’s an interesting point.", translation: "Это интересная мысль." },
-            { original: "On the contrary...", translation: "Напротив..." }
+            { original: "Choose kind.", translation: "Выбирай доброту." },
+            { original: "You're not alone.", translation: "Ты не один." },
+            { original: "If they stare, let them stare.", translation: "если они глазеют (пялятся), пусть глазеют (пялятся)" },
+            { original: "A great deal of courage.", translation: "Много мужества." },
+            { original: "You can't blend in.", translation: "Ты не сможешь слиться с толпой" },
+            { original: "Stand out.", translation: "Выделяйся" }
         ]
     },
+    //Mamma Mia!
     {
         id: 4,
         title: "Festival Fun",
         subtitle: "Праздничное веселье",
         lessonTitle: "Festival Fun: Праздничное веселье",
-        videoUrl: "videos/lesson4.mp4",
+        videoUrl: "videos/mamma.mp4",
         phrases: [
-            { original: "How’s it going?", translation: "Как дела?" },
-            { original: "Long time no see!", translation: "Давно не виделись!" },
-            { original: "Sounds good to me.", translation: "Звучит неплохо." },
-            { original: "Let’s catch up soon.", translation: "Давай скоро встретимся." }
+            { original: "You found him?", translation: "Ты нашёл его?" },
+            { original: "Not exactly.", translation: "Не совсем" },
+            { original: "Come on!", translation: "Давай же!» / «Пошли!" },
+            { original: "to have fun", translation: "весело проводить время" },
+            { original: "Oh, we are!", translation: "О, ещё как!» / «О, именно это мы и делаем!" },
         ]
     }
 ];
