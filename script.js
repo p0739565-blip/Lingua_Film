@@ -18,12 +18,14 @@ const modulesData = [
         title: "Wild Adventures",
         subtitle: "Дикие приключения",
         lessonTitle: "Wild Adventures: Дикие приключения",
-        videoUrl: "videos/lesson2.mp4",
+        videoUrl: "videos/jungle.mp4",
         phrases: [
-            { original: "It’s a piece of cake.", translation: "Это проще простого." },
-            { original: "Break a leg!", translation: "Ни пуха ни пера!" },
-            { original: "Hit the books.", translation: "Займись учёбой." },
-            { original: "Once in a blue moon.", translation: "Очень редко, раз в сто лет." }
+            { original: "Wait a second.", translation: "Подожди секунду." },
+            { original: "Like it or not.", translation: "Нравится тебе это или нет" },
+            { original: "We have to do this together.", translation: "Мы должны сделать это вместе." },
+            { original: "I don't know.", translation: "Я не знаю." },
+            { original: "Where we part.", translation: "Там, где наши пути расходятся» / «Место нашей разлуки." }
+
         ]
     },
     {
@@ -86,7 +88,11 @@ function openPlayer(module) {
     clipVideo.load();
     renderTranscript(module.phrases);
     player.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+    //document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+    player.classList.remove('hidden'); // Показываем модальное окно
+
+    // Добавляем класс к body для блокировки прокрутки
+    document.body.classList.add('modal-open');
 }
 
 // Отображение списка фраз для изучения
@@ -106,7 +112,10 @@ function renderTranscript(phrases) {
 function closePlayer() {
     clipVideo.src = '';
     player.classList.add('hidden');
-    document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
+    //document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
+
+    // Убираем класс блокировки прокрутки
+    document.body.classList.remove('modal-open');
 }
 
 // Закрытие по клику вне окна

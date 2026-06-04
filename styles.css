@@ -217,7 +217,14 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: 2rem;
     z-index: 1000;
+    max-height: 90vh;
+    overflow-y: auto;
+}
 
+/* Блокировка прокрутки основного сайта */
+body.modal-open {
+    overflow: hidden; /* Блокируем прокрутку body */
+    height: 100vh; /* Фиксируем высоту body */
 }
 
 .player {
