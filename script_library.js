@@ -13,9 +13,93 @@ const clipsData = [
             { original: "I've never seen.", translation: "Я никогда не видел." },
         ]
     },
-    // Jumanji: Welcome to the Jungle
     {
         id: 2,
+        title: "Friends Forever",
+        subtitle: "Дружба на века",
+        lessonTitle: "Friends Forever: Дружба на века",
+        module: "friends",
+        videoUrl: "videos/po.mp4", 
+        thumbnail: "foto/The_parent_trap.png",
+        transript: [
+            { original: "I've never seen.", translation: "Я никогда не видел." },
+        ]
+    },
+    {
+        id: 3,
+        title: "Friends Forever",
+        subtitle: "Дружба на века",
+        lessonTitle: "Friends Forever: Дружба на века",
+        module: "friends",
+        videoUrl: "videos/po.mp4", 
+        thumbnail: "foto/The_parent_trap.png",
+        transript: [
+            { original: "I've never seen.", translation: "Я никогда не видел." },
+        ]
+    },
+    {
+        id: 4,
+        title: "Friends Forever",
+        subtitle: "Дружба на века",
+        lessonTitle: "Friends Forever: Дружба на века",
+        module: "friends",
+        videoUrl: "videos/po.mp4", 
+        thumbnail: "foto/The_parent_trap.png",
+        transript: [
+            { original: "I've never seen.", translation: "Я никогда не видел." },
+        ]
+    },
+    // Jumanji: Welcome to the Jungle
+    {
+        id: 5,
+        title: "Wild Adventures",
+        subtitle: "Дикие приключения",
+        lessonTitle: "Wild Adventures: Дикие приключения",
+        module: "adventures",
+        videoUrl: "videos/jungle.mp4",
+        thumbnail: "foto/jumanji.png",
+        transript: [
+            { original: "Wait a second.", translation: "Подожди секунду." },
+            { original: "Like it or not.", translation: "Нравится тебе это или нет" },
+            { original: "We have to do this together.", translation: "Мы должны сделать это вместе." },
+            { original: "I don't know.", translation: "Я не знаю." },
+            { original: "Where we part.", translation: "Там, где наши пути расходятся / Место нашей разлуки." }
+        ]
+    },
+     {
+        id: 6,
+        title: "Wild Adventures",
+        subtitle: "Дикие приключения",
+        lessonTitle: "Wild Adventures: Дикие приключения",
+        module: "adventures",
+        videoUrl: "videos/jungle.mp4",
+        thumbnail: "foto/jumanji.png",
+        transript: [
+            { original: "Wait a second.", translation: "Подожди секунду." },
+            { original: "Like it or not.", translation: "Нравится тебе это или нет" },
+            { original: "We have to do this together.", translation: "Мы должны сделать это вместе." },
+            { original: "I don't know.", translation: "Я не знаю." },
+            { original: "Where we part.", translation: "Там, где наши пути расходятся / Место нашей разлуки." }
+        ]
+    },
+     {
+        id: 7,
+        title: "Wild Adventures",
+        subtitle: "Дикие приключения",
+        lessonTitle: "Wild Adventures: Дикие приключения",
+        module: "adventures",
+        videoUrl: "videos/jungle.mp4",
+        thumbnail: "foto/jumanji.png",
+        transript: [
+            { original: "Wait a second.", translation: "Подожди секунду." },
+            { original: "Like it or not.", translation: "Нравится тебе это или нет" },
+            { original: "We have to do this together.", translation: "Мы должны сделать это вместе." },
+            { original: "I don't know.", translation: "Я не знаю." },
+            { original: "Where we part.", translation: "Там, где наши пути расходятся / Место нашей разлуки." }
+        ]
+    },
+     {
+        id: 8,
         title: "Wild Adventures",
         subtitle: "Дикие приключения",
         lessonTitle: "Wild Adventures: Дикие приключения",
@@ -32,7 +116,58 @@ const clipsData = [
     },
     // Wonder
     {
-        id: 3,
+        id: 9,
+        title: "Deep Talk",
+        subtitle: "Глубокие беседы",
+        lessonTitle: "Deep Talk: Глубокие беседы",
+        module: "talk",
+        videoUrl: "videos/wo.mp4",
+        thumbnail: "foto/wonder.png",
+        transript: [
+            { original: "Choose kind.", translation: "Выбирай доброту." },
+            { original: "You're not alone.", translation: "Ты не один." },
+            { original: "If they stare, let them stare.", translation: "Если они глазеют, пусть глазеют." },
+            { original: "A great deal of courage.", translation: "Много мужества." },
+            { original: "You can't blend in.", translation: "Ты не сможешь слиться с толпой." },
+            { original: "Stand out.", translation: "Выделяйся." }
+        ]
+    },
+    {
+        id: 10,
+        title: "Deep Talk",
+        subtitle: "Глубокие беседы",
+        lessonTitle: "Deep Talk: Глубокие беседы",
+        module: "talk",
+        videoUrl: "videos/wo.mp4",
+        thumbnail: "foto/wonder.png",
+        transript: [
+            { original: "Choose kind.", translation: "Выбирай доброту." },
+            { original: "You're not alone.", translation: "Ты не один." },
+            { original: "If they stare, let them stare.", translation: "Если они глазеют, пусть глазеют." },
+            { original: "A great deal of courage.", translation: "Много мужества." },
+            { original: "You can't blend in.", translation: "Ты не сможешь слиться с толпой." },
+            { original: "Stand out.", translation: "Выделяйся." }
+        ]
+    },
+    {
+        id: 11,
+        title: "Deep Talk",
+        subtitle: "Глубокие беседы",
+        lessonTitle: "Deep Talk: Глубокие беседы",
+        module: "talk",
+        videoUrl: "videos/wo.mp4",
+        thumbnail: "foto/wonder.png",
+        transript: [
+            { original: "Choose kind.", translation: "Выбирай доброту." },
+            { original: "You're not alone.", translation: "Ты не один." },
+            { original: "If they stare, let them stare.", translation: "Если они глазеют, пусть глазеют." },
+            { original: "A great deal of courage.", translation: "Много мужества." },
+            { original: "You can't blend in.", translation: "Ты не сможешь слиться с толпой." },
+            { original: "Stand out.", translation: "Выделяйся." }
+        ]
+    },
+    {
+        id: 12,
         title: "Deep Talk",
         subtitle: "Глубокие беседы",
         lessonTitle: "Deep Talk: Глубокие беседы",
@@ -50,7 +185,55 @@ const clipsData = [
     },
     // Mamma Mia!
     {
-        id: 4,
+        id: 13,
+        title: "Festival Fun",
+        subtitle: "Праздничное веселье",
+        lessonTitle: "Festival Fun: Праздничное веселье",
+        module: "festival",
+        videoUrl: "videos/mamma.mp4",
+        thumbnail: "foto/mama.png",
+        transript: [
+            { original: "You found him?", translation: "Ты нашёл его?" },
+            { original: "Not exactly.", translation: "Не совсем." },
+            { original: "Come on!", translation: "Давай же! / Пошли!" },
+            { original: "to have fun", translation: "весело проводить время" },
+            { original: "Oh, we are!", translation: "О, ещё как! / О, именно это мы и делаем!" }
+        ]
+    },
+    {
+        id: 14,
+        title: "Festival Fun",
+        subtitle: "Праздничное веселье",
+        lessonTitle: "Festival Fun: Праздничное веселье",
+        module: "festival",
+        videoUrl: "videos/mamma.mp4",
+        thumbnail: "foto/mama.png",
+        transript: [
+            { original: "You found him?", translation: "Ты нашёл его?" },
+            { original: "Not exactly.", translation: "Не совсем." },
+            { original: "Come on!", translation: "Давай же! / Пошли!" },
+            { original: "to have fun", translation: "весело проводить время" },
+            { original: "Oh, we are!", translation: "О, ещё как! / О, именно это мы и делаем!" }
+        ]
+    },
+    {
+        id: 15,
+        title: "Festival Fun",
+        subtitle: "Праздничное веселье",
+        lessonTitle: "Festival Fun: Праздничное веселье",
+        module: "festival",
+        videoUrl: "videos/mamma.mp4",
+        thumbnail: "foto/mama.png",
+        transript: [
+            { original: "You found him?", translation: "Ты нашёл его?" },
+            { original: "Not exactly.", translation: "Не совсем." },
+            { original: "Come on!", translation: "Давай же! / Пошли!" },
+            { original: "to have fun", translation: "весело проводить время" },
+            { original: "Oh, we are!", translation: "О, ещё как! / О, именно это мы и делаем!" }
+        ]
+    },
+    {
+        id: 16,
         title: "Festival Fun",
         subtitle: "Праздничное веселье",
         lessonTitle: "Festival Fun: Праздничное веселье",
