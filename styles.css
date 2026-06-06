@@ -79,6 +79,31 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+/* Герой‑секция library */
+.hero_library {
+    display: flex;                    
+    flex-direction: column;           
+    justify-content: center;         
+    align-items: center;             
+    padding: 0;                       
+    background: linear-gradient(135deg, #452aab 0%, #f00071 100%);
+    color: white;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+}
+
+.hero_library h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_library p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;    
+}
+
 
 #startButton {
     padding: 0.8rem 2rem;
