@@ -220,17 +220,20 @@ body {
     z-index: 1000;
     align-items: center;
     justify-content: center;
+    display: flex; 
 }
+
 
 .hidden {
     display: none;
 }
 
-.modal.active, .player.active {
-    display: flex;
-}
 
-.modal-content, .player {
+/* .modal.active, .player.active {
+    display: flex;
+} */
+
+.modal-content {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -241,10 +244,75 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: 2rem;
-    z-index: 1000;
+    z-index: 1001; /* УВЕЛИЧИТЬ на 1 относительно фона (.modal) */
     max-height: 90vh;
     overflow-y: auto;
+    opacity: 0; /* Начальное состояние — невидимо */
+    transform: translate(-50%, calc(-50% + 20px)); /* Слегка смещено вниз */
+    transition: all 0.3s ease; /* Плавная анимация */
 }
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между кнопкой и заголовком */
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px; /* Отступ от остального контента */
+}
+
+.btn-back {
+    position: relative;
+    /* остальные стили кнопки */
+}
+
+
+
+.dialog-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.comprehension-question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.option {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Эффект появления: когда у modal НЕТ класса hidden, контент плавно появляется */
+.modal:not(.hidden) .modal-content {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Возвращается в центр */
+}
+
+.player {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
 
 /* Блокировка прокрутки основного сайта */
 body.modal-open {
@@ -287,6 +355,40 @@ body.modal-open {
     top: auto;
     right: auto;
 }
+
+
+.btn-back {
+    position: relative; /* Вместо absolute/fixed */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #6200ee;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; /* Выше основного контента, но ниже крестика */
+    margin-bottom: 20px; /* Отступ снизу от кнопки */
+}
+
+.btn-back:hover {
+    background: #3700b3;
+}
+
+/* Скрываем кнопку по умолчанию */
+.btn-back.hidden {
+    display: none;
+}
+
+/* Отступ для заголовка после кнопки */
+.exercise-title {
+    margin-top: 0; /* Убираем стандартный отступ h2 */
+    padding-top: 10px; /* Небольшой отступ от кнопки */
+}
+
 
 /* Заголовок урока в модальном окне */
 #lessonTitle {
@@ -432,6 +534,90 @@ body.modal-open {
     color: #2c3e50;
     font-size: 1.2rem;
 }
+
+
+/* доп стили для упр*/
+/* Стили для упражнений */
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.exercise-tile {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.exercise-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.module-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-module {
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-module:hover {
+    background-color: #2980b9;
+}
+
+.options {
+    margin: 1rem 0;
+}
+
+/* Кнопка "Назад" в модальном окне */
+#backToModules {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+#backToModules:hover {
+    color: #333;
+}
+
+/* Скрываем кнопку закрытия (крестик) при активном выборе упражнения, 
+   чтобы не было двух кнопок выхода */
+#closeExercise.hidden-close {
+    display: none;
+}
+
+
+
+
+
 
 /* Футер */
 .footer {
